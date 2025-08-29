@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/my-react-app/' // Cambia por el nombre de tu repositorio
+  base: '/tumix-frontend/' // Cambia por el nombre de tu repositorio
 })
