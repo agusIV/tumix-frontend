@@ -1,0 +1,190 @@
+#cabezera{
+  background-color: #d6670c;
+}
+#cabezeraLogo{
+  width: 90px;
+  height: 90px;
+}
+#cabezeraLogo img{
+  height: 90px;
+  background-color: white;
+  border-radius: 999px;
+  transition: 0.2s ease;
+}
+#cabezeraLogo img:hover{
+  scale: 1.05;
+}
+/*------------------*/
+#buscadorLista{
+  top:40px;
+  z-index: 100;
+}
+/*------------------*/
+#cabezeraDerecha{
+    width: 500px;
+}
+/*------------------*/
+#offcanvasNavbar {
+  --bs-offcanvas-color: #fff; /* texto blanco */
+  --bs-offcanvas-hover: #322617;
+}
+#offcanvasNavbar.show {
+  --bs-offcanvas-color: #322617; /* texto negro */
+  --bs-offcanvas-hover: #d6670c;
+}
+.cabezeraBotones {
+  cursor: pointer;
+  color: var(--bs-offcanvas-color);
+  transition: color 0.2s ease;
+}
+
+.cabezeraBotones:hover {
+  color: var(--bs-offcanvas-hover);
+}
+
+/*#cabezera{
+    background-color:#d6670c;
+    min-width: 1100px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 100;
+    font-size: 35px;
+}
+/*---------------------------*/
+
+/*#cabezeraIzquierda{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 250px
+}
+#cabezeraLogo{
+    text-align: right;
+    width: 40%;
+    height: 90px;
+}
+#cabezeraLogo img{
+    height: 90px;
+    background-color: white;
+    border-radius: 999px;
+    transition: 0.2s ease;
+}
+#cabezeraLogo img:hover{
+    scale: 1.05;
+}
+#cabezeraProductos{
+    width: 60%;
+}
+/*---------------------------*/
+/*#cabezeraBuscador{
+    width: 400px;
+    position: relative;
+    display: flex;
+    height: 50%;
+    border-radius: 15px;
+    border: 2px solid white;
+}
+#cabezeraEntrada{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    padding: 0 20px;
+}
+#cabezeraEntrada::placeholder{
+    color: white;
+}
+#cabezeraEntrada:hover::placeholder{
+    color: #322617;
+}
+#cabezeraEntrada:-webkit-autofill{
+    box-shadow: 0 0 0px 1000px #d6670c inset !important; /* fondo igual al input */
+/*    -webkit-text-fill-color: white !important; /* texto blanco */
+/*    border-radius: 999px;
+    transition: background-color 9999s ease-in-out 0s;
+    font-size: 20px;
+}
+.icono-boton{
+    background: none;
+    color: white;
+    font-size: 20px;
+}
+#cabezeraBorrar{
+    border: none;
+}
+#cabezeraBuscar{
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
+    border-color: white;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+#cabezeraBusqueda{
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 15px;
+    width: 340px;
+    color: #d6670c;
+    background-color: white;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+    box-shadow: 0 2px 5px #322617;
+}
+.cabezeraOpcion{
+    padding: 5px;
+    cursor: pointer;
+}
+.cabezeraOpcion:hover{
+    background-color: rgb(190, 190, 190);
+    list-style-type: none;
+}
+/*---------------------------*/
+/*#cabezeraDerecha{
+    width: 450px;
+    display: flex;
+}
+#cabezeraCrear{
+    width: 38%;
+    text-align: center;
+}
+#cabezeraIniciar{
+    width: 36%;
+}
+#cabezeraCerrar{
+    text-align: center;
+    width: 200px;
+}
+#cabezeraCarrito{
+    position: relative;
+    width: 26%;
+    display: flex;
+}
+#cabezeraIcono{
+    font-size: 30px;
+}
+#cabezeraCantidad{
+    position: absolute;
+    background-color: #ff914d;
+    border-radius: 999px;
+    padding: 0px 8px 0px 8px;
+    font-size: 20px;
+    left: 6px;
+    top:-2px;
+}
+/*---------------------------*/
+/*.cabezeraBotones{
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.cabezeraBotones:hover{
+    color: #322617;
+}

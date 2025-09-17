@@ -1,6 +1,6 @@
 {
   "homepage": "https://agusiv.github.io/tumix-frontend/",
-  "name": "my-react-app",
+  "name": "frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,13 +13,18 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "bootstrap": "^5.3.0",
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.11.0",
+    "bootstrap": "^5.3.8",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
     "@types/react": "^19.1.10",
+    "@types/react-bootstrap": "^1.1.0",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react-swc": "^4.0.0",
     "eslint": "^9.33.0",
