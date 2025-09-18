@@ -16,7 +16,7 @@ export default function ListaProductos({ productosFiltrados }: { productosFiltra
         <div id="listaProductos">
             {productosFiltrados.map(producto => (
                 <div className="listaProducto" key={producto.nombre} >
-                    <div className="listaImagen"><img src="imagenes/logo.png" onClick={() => navigate("/producto", {state: {producto}})}/></div>
+                    <div className="listaImagen"><img src="tumix-frontend/imagenes/logo.png" onClick={() => navigate("/producto", {state: {producto}})}/></div>
                     <div className="listaInfo">
                         <div className="listaNombre">
                             {producto.nombre}

@@ -1,4 +1,36 @@
 #catalogo{
+    width: 977px;
+    background-color: #d6670c;
+}
+#catalogoTitulo{
+    background-color: #ed8330;
+}
+.catalogoCategoria{
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.catalogoCategoria:hover{
+    transform: scale(1.04);
+}
+.catalogoImagen{
+    width: 100%;
+}
+.catalogoNombre {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+/*#catalogo{
     width: 992px;
     margin: 150px auto 0;
     text-align: center;
@@ -45,4 +77,4 @@
     font-size: 26px;
     background-color: white;
     z-index: 10;
-}
+}*/

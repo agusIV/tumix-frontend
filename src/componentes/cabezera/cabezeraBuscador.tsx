@@ -2,14 +2,14 @@ import {useState} from "react"
 import { useLista } from "../../contextAPI/listaContext";
 import type { NavigateFunction } from "react-router-dom";
 import {Form, InputGroup, Button, ListGroup} from "react-bootstrap"
-
 interface Producto {
   nombre: string;
   precios: number[];
-  categoria: string;
-  fila: number
+  categorias: string[];
+  fila: number;
+  imagen: string;
+  descripcion: string;
 }
-
 interface Props {
   navigate: NavigateFunction;
 }

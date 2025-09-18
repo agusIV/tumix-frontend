@@ -1,12 +1,10 @@
 import "./lista.css"
-import {useState, useEffect} from "react"
-import { useLocation, useSearchParams} from 'react-router-dom';
-import type { SetURLSearchParams } from "react-router-dom";
+import { useSearchParams} from 'react-router-dom';
 import ListaBuscador from "../../componentes/lista/listaBuscador";
 import ListaProductos from "../../componentes/lista/listaProductos";
 import { useLista } from "../../contextAPI/listaContext";
 
-interface Producto {
+/*interface Producto {
   nombre: string;
   precios: number[];
   categorias: string[];
@@ -18,11 +16,15 @@ interface Producto {
 interface LocationState {
   cat?: string;
   filtrados?: Producto[];
-}
+}*/
 
 export default function Lista(){
     const { lista } = useLista()
+    console.log("esta es la lista",lista);
+    
     const [searchParams, setSearchParams] = useSearchParams();
+    console.log(searchParams.get('categoria'));
+    
     
     const categoriasSeleccionadas = searchParams.getAll("categoria");
 
