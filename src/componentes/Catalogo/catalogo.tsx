@@ -7,6 +7,9 @@ export default function Catalogo() {
     const parametro = new URLSearchParams({categoria: cat}).toString()
     navigate(`/Lista?${parametro}`);
   }
+
+  console.log("?");
+  
   
   return (
     <div id="catalogo" className='mx-auto my-5 rounded-5 overflow-hidden'>
