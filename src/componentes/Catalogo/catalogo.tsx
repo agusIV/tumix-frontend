@@ -8,11 +8,10 @@ export default function Catalogo() {
     navigate(`/Lista?${parametro}`);
   }
 
-  console.log("?");
-  
+  console.log("1");
   
   return (
-    <div id="catalogo" className='mx-auto my-5 rounded-5 overflow-hidden'>
+    <div id="catalogo" className='mx-auto my-5 rounded-5 overflow-hidden shadow-lg'>
       <h2 id="catalogoTitulo" className='text-center p-3'>CATEGORIAS</h2>
       <div id="catalogoSecciones" className='d-flex flex-wrap gap-2 justify-content-center py-3'>
         <div className="catalogoCategoria" onClick={() => cambiarRuta("Mix")}>
