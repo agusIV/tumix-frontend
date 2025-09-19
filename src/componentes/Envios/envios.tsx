@@ -1,4 +1,4 @@
-import "./Envios.css"
+import "./envios.css"
 
 export default function Envios() {
     return (
