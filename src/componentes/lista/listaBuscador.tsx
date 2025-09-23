@@ -22,7 +22,7 @@ export default function ListaBuscador({
   const categorias = [...new Set(lista.flatMap(p => p.categorias))]
   
   return (
-    <div id="listaBuscador">
+    <div id="listaBuscador" className="d-flex flex-wrap gap-5 justify-content-center">
       {categorias.map(c => {
         const id = `categoria-${c}`
         return(

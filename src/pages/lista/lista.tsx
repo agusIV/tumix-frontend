@@ -4,20 +4,6 @@ import ListaBuscador from "../../componentes/lista/listaBuscador";
 import ListaProductos from "../../componentes/lista/listaProductos";
 import { useLista } from "../../contextAPI/listaContext";
 
-/*interface Producto {
-  nombre: string;
-  precios: number[];
-  categorias: string[];
-  fila: number;
-  imagen: string;
-  descripcion: string;
-}
-
-interface LocationState {
-  cat?: string;
-  filtrados?: Producto[];
-}*/
-
 export default function Lista(){
     const { lista } = useLista()
     console.log("esta es la lista",lista);
@@ -44,7 +30,7 @@ export default function Lista(){
     });
 
     return(
-        <div id="lista">
+        <div id="lista" className="mx-auto my-5">
             <ListaBuscador 
                 lista={lista}
                 categoriasSeleccionadas={categoriasSeleccionadas}

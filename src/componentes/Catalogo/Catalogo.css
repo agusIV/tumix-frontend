@@ -1,32 +1,46 @@
 #catalogo{
-    width: 977px;
-    background-color: #ed8330; 
+  width: 977px;
+  background-color: #ed8330; 
 }
 #catalogoTitulo{
-    background-color: #d6670c;
+  background-color: #d6670c;
 }
 .catalogoCategoria{
-    position: relative;
-    overflow: hidden;
-    width: 300px;
-    height: 350px;
-    border-radius: 15px;
-    transition: transform 0.1s ease-in-out;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 350px;
+  border-radius: 15px;
+  transition: transform 0.1s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .catalogoCategoria:hover{
-    transform: scale(1.04);
+  transform: scale(1.04);
 }
 .catalogoImagen{
-    width: 100%;
+  width: 100%;
 }
 .catalogoNombre {
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    bottom: 50px;
-    font-size: 30px;
-    text-align: center;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  bottom: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  #catalogo {
+    width: 95%;
+    min-width: 460px;
+  }
+  .catalogoCategoria{
+    width: 48%;
+    height: 290px;
+  }
+  .catalogoNombre{
+    font-size: 24px;
+  }
 }

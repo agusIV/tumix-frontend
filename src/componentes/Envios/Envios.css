@@ -1,7 +1,9 @@
 #envios{
-    width: 977px;
-    background-color: #d6670c;
+  width: 977px;
+  background-color: #d6670c;
 }
-/*#envios{
-    box-shadow: 0 0 5px 1px #322617;
+@media (max-width: 992px) {
+  #envios{
+    width: 95%;
+  }
 }
