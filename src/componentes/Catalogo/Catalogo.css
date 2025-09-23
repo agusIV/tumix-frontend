@@ -34,7 +34,7 @@
 @media (max-width: 992px) {
   #catalogo {
     width: 95%;
-    min-width: 460px;
+    min-width: 300px;
   }
   .catalogoCategoria{
     width: 48%;

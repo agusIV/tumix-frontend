@@ -17,13 +17,13 @@
 @media (max-width: 992px) {
   #lista{
     width: 95%;
-    min-width: 460px;
+    min-width: 300px;
   }
   #listaProductos{
     flex-wrap: wrap;
   }
   .listaProducto{
-    width: 220px;
+    width: 48%;
     height: 440px;
   }
   .listaImagen{
