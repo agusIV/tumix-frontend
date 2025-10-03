@@ -27,7 +27,7 @@ export default function ListaProductos({ productosFiltrados }: { productosFiltra
             <div className="listaLeer" onClick={() => navigate("/producto", {state: {producto}})}>leer mas</div>
           </div>    
               
-          <div className="listaPrecios d-flex flex-column justify-content-center bg-white ms-auto text-center align-items-center p-3">
+          <div className="listaPrecios d-flex flex-column justify-content-center bg-white ms-auto text-center align-items-center">
             <div className="listaP">100grs: {producto.precios[3]}</div>
             <div className="listaP">250grs: {producto.precios[2]}</div>
             <div className="listaP">500grs: {producto.precios[1]}</div>

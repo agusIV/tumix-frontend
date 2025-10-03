@@ -1,8 +1,23 @@
 #lista{
   width: 992px;
 }
+#listaBuscador{
+  
+}
+.listaCheckBox{
+  width: 170px;
+  height: 30px;
+  border: 1px solid #ed8330;
+  padding: 2px;
+}
+.listaCheckBox input[type="checkbox"]{
+  accent-color: #ed8330;
+}
 .listaImagen{
   width: 20%;
+}
+.listaInfo{
+  font-size: 20px
 }
 .listaPrecios{
   width: 200px;
@@ -14,30 +29,33 @@
 .listaProducto:nth-child(even) { 
   background-color: #d6670c; 
 }
+
 @media (max-width: 992px) {
   #lista{
     width: 95%;
-    min-width: 300px;
+    min-width: 344px;
   }
   #listaProductos{
     flex-wrap: wrap;
   }
   .listaProducto{
-    width: 48%;
-    height: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 47%;
   }
   .listaImagen{
-    position: absolute;
-    top: 70px;
     width: 100%;
     background-color: white;
   }
-  .listaNombre{
+  .listaInfo{
     text-align: center;
-    position: absolute;
     width: 100%;
-    font-size: 20px;
-    top: 5px;
+  }
+  .listaNombre{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
   }
   .listaDescripcion{
     display: none;
@@ -46,9 +64,6 @@
     display: none;
   }
   .listaPrecios{
-    position: absolute;
-    bottom: 0px;
     width: 100%;
-    font-size: 16px;
   }
 }

@@ -22,16 +22,16 @@ export default function ListaBuscador({
   const categorias = [...new Set(lista.flatMap(p => p.categorias))]
   
   return (
-    <div id="listaBuscador" className="d-flex flex-wrap gap-5 justify-content-center">
+    <div id="listaBuscador" className="d-flex flex-wrap gap-1 justify-content-center">
       {categorias.map(c => {
         const id = `categoria-${c}`
         return(
-          <div key={c} className="listaCheckBox">
+          <div key={c} className="listaCheckBox rounded-5">
             <input 
               id={id}
               type="checkbox" 
               checked={categoriasSeleccionadas.includes(c)}
-              onChange={() => onCategoriaChange(c)} // Directamente aquí
+              onChange={() => onCategoriaChange(c)} 
             />
             <label htmlFor={id}>{c}</label>
           </div>
