@@ -2,16 +2,30 @@
   width: 992px;
 }
 #listaBuscador{
+  font-size: 20px
+}
+#listaFiltroCelular{
+  background-color: #ed8330;
+}
+#listaFiltroComputadora{
   
 }
+#FiltroComputadoraBoton{
+  background-color: #ed8330;
+}
+#FiltroComputadoraLista{
+  width: 200px;
+}
 .listaCheckBox{
-  width: 170px;
-  height: 30px;
-  border: 1px solid #ed8330;
-  padding: 2px;
+  height: 28px;
+  border-bottom: 2px solid #ed8330;
+  padding: 3px;
 }
 .listaCheckBox input[type="checkbox"]{
   accent-color: #ed8330;
+}
+.cajaNombre{
+  width: 100%;
 }
 .listaImagen{
   width: 20%;

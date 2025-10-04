@@ -1,4 +1,7 @@
 import "./carrusel.css";
+import carrusel1 from "../../assets/imagenes/1.png"
+import carrusel2 from "../../assets/imagenes/2.png"
+import carrusel3 from "../../assets/imagenes/3.png"
 
 export default function Carrusel() {
   return (
@@ -12,13 +15,13 @@ export default function Carrusel() {
 
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="/tumix-frontend/imagenes/1.png" className="d-block w-100" alt="Imagen 1" />
+          <img src={carrusel1} className="d-block w-100" alt="Imagen 1" />
         </div>
         <div className="carousel-item">
-          <img src="/tumix-frontend/imagenes/2.png" className="d-block w-100" alt="Imagen 2" />
+          <img src={carrusel2} className="d-block w-100" alt="Imagen 2" />
         </div>
         <div className="carousel-item">
-          <img src="/tumix-frontend/imagenes/3.png" className="d-block w-100" alt="Imagen 3" />
+          <img src={carrusel3} className="d-block w-100" alt="Imagen 3" />
         </div>
       </div>
 

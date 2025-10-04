@@ -2,6 +2,7 @@ import "./cabezera.css"
 import { useNavigate } from "react-router-dom";
 import CabezeraBuscador from "../../componentes/cabezera/cabezeraBuscador"
 import CabezeraDerecha from "../../componentes/cabezera/cabezeraDerecha"
+import logo from "../../assets/imagenes/logo.png"
 
 export default function Cabezera() {
     
@@ -15,7 +16,7 @@ export default function Cabezera() {
           className="navbar-brand" 
           onClick={() => navigate("tumix-frontend/")}
         >
-          <img className="cabezeraBotones" src="imagenes/logo.png" alt="Logo" />
+          <img className="cabezeraBotones" src={logo} alt="Logo" />
         </div>
 
         <div className="d-flex justify-content-center flex-grow-1 mx-3">

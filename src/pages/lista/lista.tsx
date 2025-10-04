@@ -6,12 +6,7 @@ import { useLista } from "../../contextAPI/listaContext";
 
 export default function Lista(){
     const { lista } = useLista()
-    console.log("esta es la lista",lista);
-    
     const [searchParams, setSearchParams] = useSearchParams();
-    console.log(searchParams.get('categoria'));
-    
-    
     const categoriasSeleccionadas = searchParams.getAll("categoria");
 
     const handleCategoriaChange = (categoria: string) => {

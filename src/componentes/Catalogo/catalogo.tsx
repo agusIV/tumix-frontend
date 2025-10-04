@@ -1,5 +1,11 @@
 import "./catalogo.css"
 import { useNavigate } from 'react-router-dom';
+import mix from "../../assets/imagenes/mix.jpeg"
+import secos from "../../assets/imagenes/secos.jpeg"
+import deshidratadas from "../../assets/imagenes/deshidratadas.jpeg"
+import snacks from "../../assets/imagenes/snacks.jpeg"
+import CYG from "../../assets/imagenes/CYG.jpeg"
+import otros from "../../assets/imagenes/otros.jpeg"
 
 export default function Catalogo() {
   const navigate = useNavigate()
@@ -13,27 +19,27 @@ export default function Catalogo() {
       <h2 id="catalogoTitulo" className='text-center p-3'>CATEGORIAS</h2>
       <div id="catalogoSecciones" className='d-flex flex-wrap gap-2 justify-content-center py-3'>
         <div className="catalogoCategoria" onClick={() => cambiarRuta("Mix")}>
-          <img className="catalogoImagen" src={"imagenes/mix.jpeg"} alt=""/>
+          <img className="catalogoImagen" src={mix} alt=""/>
           <div className="catalogoNombre">mixes</div >
         </div>
         <div className="catalogoCategoria" onClick={() => cambiarRuta("Frutos Secos")}>
-          <img className="catalogoImagen" src={"imagenes/secos.jpeg"} alt=""/>
+          <img className="catalogoImagen" src={secos} alt=""/>
           <div className="catalogoNombre">frutos secos</div >
         </div>
         <div className="catalogoCategoria" onClick={() => cambiarRuta("Frutas Deshidratadas")}>
-          <img className="catalogoImagen" src={"imagenes/deshidratadas.jpeg"} alt=""/>
+          <img className="catalogoImagen" src={deshidratadas} alt=""/>
           <div className="catalogoNombre">frutas deshidratadas</div >
         </div>
         <div className="catalogoCategoria" onClick={() => cambiarRuta("Snacks")}>
-          <img className="catalogoImagen" src={"imagenes/snacks.jpeg"} alt=""/>
+          <img className="catalogoImagen" src={snacks} alt=""/>
           <div className="catalogoNombre">snacks</div >
         </div>
         <div className="catalogoCategoria" onClick={() => cambiarRuta("Cereales y Granos")}>
-          <img className="catalogoImagen" src={"imagenes/CYG.jpeg"} alt=""/>
+          <img className="catalogoImagen" src={CYG} alt=""/>
           <div className="catalogoNombre">cereales y granos</div >
         </div>
         <div className="catalogoCategoria" onClick={() => cambiarRuta("Otros")}>
-          <img className="catalogoImagen" src={"imagenes/otros.jpeg"} alt=""/>
+          <img className="catalogoImagen" src={otros} alt=""/>
           <div className="catalogoNombre">otros</div >
         </div>
       </div>
