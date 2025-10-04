@@ -18,7 +18,7 @@ interface ListaBuscadorProps {
 
 export default function ListaBuscador({ lista, categoriasSeleccionadas, onCategoriaChange }: ListaBuscadorProps) {
   const categorias = [...new Set(lista.flatMap(p => p.categorias))]
-  const [dispositivo, setDispositivo] = useState(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+  const [dispositivo] = useState(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
   
   if (dispositivo) {
     console.log("Es un dispositivo móvil");
