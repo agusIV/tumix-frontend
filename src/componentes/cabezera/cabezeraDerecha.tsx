@@ -18,7 +18,7 @@ export default function CabezeraDerecha({navigate}: Props) {
   return (
     <div id="cabezeraDerecha" className="d-flex align-items-lg-center flex-lg-row flex-column">
       <div id="cabezeraProductos" className="flex-fill">
-        <span className="cabezeraBotones" onClick={() => navigate(`${import.meta.env.BASE_URL}Lista`)}>
+        <span className="cabezeraBotones" onClick={() => navigate("Lista")}>
           Lista de productos
         </span>
       </div>

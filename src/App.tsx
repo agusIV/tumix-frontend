@@ -12,7 +12,7 @@ function App() {
       <ScrollToTop/>
       <Cabezera/>
       <Routes>
-        <Route path="tumix-frontend" element={<Inicio/>}/>
+        <Route path="" element={<Inicio/>}/>
         <Route path="Lista" element={<Lista/>}/>
       </Routes>
       <Pie/>
