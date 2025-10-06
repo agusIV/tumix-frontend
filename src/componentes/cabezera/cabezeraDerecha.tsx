@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default function CabezeraDerecha({navigate}: Props) {
-  console.log(`${import.meta.env.BASE_URL}Lista`)
+  console.log("basename=/tumix-frontend/")
   
   const {carrito} = useUsuario()
   const token = localStorage.getItem("token")
