@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default function CabezeraDerecha({navigate}: Props) {
-  console.log("...")
+  console.log(`${import.meta.env.BASE_URL}Lista`)
   
   const {carrito} = useUsuario()
   const token = localStorage.getItem("token")
@@ -18,7 +18,7 @@ export default function CabezeraDerecha({navigate}: Props) {
   return (
     <div id="cabezeraDerecha" className="d-flex align-items-lg-center flex-lg-row flex-column">
       <div id="cabezeraProductos" className="flex-fill">
-        <span className="cabezeraBotones" onClick={() => navigate("Lista")}>
+        <span className="cabezeraBotones" onClick={() => navigate(`${import.meta.env.BASE_URL}Lista`)}>
           Lista de productos
         </span>
       </div>
