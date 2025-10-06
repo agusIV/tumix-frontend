@@ -36,7 +36,7 @@ function Root() {
   }, [])
   if (!lista) {
     return (
-      <div>
+      <div className="flex justify-center items-center h-screen">
         <h2>Cargando...</h2>
       </div>
     )
