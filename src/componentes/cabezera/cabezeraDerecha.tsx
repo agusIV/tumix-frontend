@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default function CabezeraDerecha({navigate}: Props) {
-  console.log("sacando barra");
+  console.log(import.meta.env.BASE_URL)
   
   const {carrito} = useUsuario()
   const token = localStorage.getItem("token")
