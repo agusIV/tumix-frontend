@@ -20,11 +20,6 @@ export default function ListaBuscador({ lista, categoriasSeleccionadas, onCatego
   const categorias = [...new Set(lista.flatMap(p => p.categorias))]
   const [dispositivo] = useState(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
   
-  if (dispositivo) {
-    console.log("Es un dispositivo móvil");
-  } else {
-    console.log("Es una computadora");
-  }
   return (
     <div id="listaBuscador" className="d-flex gap-2">
       {dispositivo ? (

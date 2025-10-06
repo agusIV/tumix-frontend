@@ -14,7 +14,7 @@ export default function Cabezera() {
         <div 
           id="cabezeraLogo" 
           className="navbar-brand" 
-          onClick={() => navigate("tumix-frontend/")}
+          onClick={() => navigate("")}
         >
           <img className="cabezeraBotones" src={logo} alt="Logo" />
         </div>
