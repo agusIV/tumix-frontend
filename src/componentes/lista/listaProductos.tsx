@@ -34,7 +34,7 @@ export default function ListaProductos({ productosFiltrados }: { productosFiltra
               <div className="listaP">250grs: {producto.precios[2]}</div>
               <div className="listaP">500grs: {producto.precios[1]}</div>
               <div className="listaP">1 kilo: {producto.precios[0]}</div>
-              <div className="listaComprar" onClick={() => navigate("/producto", {state: {producto}})}>comprar</div>
+              <div className="listaComprar rounded-3 p-1" onClick={() => navigate("/producto", {state: {producto}})}>comprar</div>
             </div>     
           </div>
         )

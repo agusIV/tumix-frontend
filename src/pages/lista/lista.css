@@ -1,5 +1,6 @@
 #lista{
   width: 992px;
+  min-height: 100vh;
 }
 #listaBuscador{
   font-size: 20px
@@ -36,6 +37,13 @@
 .listaPrecios{
   width: 200px;
   font-size: 20px;
+}
+.listaComprar{
+  background-color: #d6670c;
+  cursor: pointer;
+}
+.listaComprar:hover{
+  color: white;
 }
 .listaProducto:nth-child(odd) { 
   background-color: #ed8330; 

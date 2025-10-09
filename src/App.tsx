@@ -23,13 +23,10 @@ function App() {
 export default App
 
 /*
-import Lista from "./pages/lista"
 import Crear from "./pages/crear"
 import Iniciar from "./pages/iniciar"
 import Carrito from "./pages/carrito"
 import Producto from "./pages/producto"
-
-
 
         <Route path="/Crear" element={<Crear/>}/>
         <Route path="/Iniciar" element={<Iniciar/>}/>

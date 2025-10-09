@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import {useUsuario} from "../../contextAPI/UsuarioContex"
 
 export default function Producto(){
-    const {carrito, agregarAlCarrito} = useUsuario()
+    //const {carrito, agregarAlCarrito} = useUsuario()
     const navigate = useNavigate()
     const location = useLocation()
     const producto = location.state.producto
