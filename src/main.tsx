@@ -9,21 +9,6 @@ import { UsuarioProovedor } from "./contextAPI/usuarioContext.tsx"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-/*const inicializar = async () => {
-  const lista = await cargarLista()
-  createRoot(document.getElementById('root')!).render(
-    <StrictMode>
-      <UsuarioProovedor>
-      <ListaProovedor listaInicial={lista}>
-        <App/>
-      </ListaProovedor>
-      </UsuarioProovedor>
-    </StrictMode>,
-  )
-}
-
-inicializar()
-*/
 function Root() {
   const [lista, setLista] = useState<any[] | null>(null)
 
