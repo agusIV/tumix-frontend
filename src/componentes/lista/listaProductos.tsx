@@ -23,7 +23,7 @@ export default function ListaProductos({ productosFiltrados }: { productosFiltra
               <div className="listaNombre">
                 {producto.nombre}
               </div>
-              <div className="listaDescripcion">
+              <div className="listaDescripcion p-1">
                 {producto.descripcion}
               </div>
               <div className="listaLeer" onClick={() => navigate("/producto", {state: {producto}})}>leer mas</div>

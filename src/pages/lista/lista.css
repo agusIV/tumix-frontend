@@ -34,6 +34,13 @@
 .listaInfo{
   font-size: 20px
 }
+.listaNombre{
+  font-size: 25px;
+}
+.listaDescripcion{
+  width: 550px;
+  height: 120px;
+}
 .listaPrecios{
   width: 200px;
   font-size: 20px;
@@ -87,5 +94,6 @@
   }
   .listaPrecios{
     width: 100%;
+    padding-bottom: 5px;
   }
 }
