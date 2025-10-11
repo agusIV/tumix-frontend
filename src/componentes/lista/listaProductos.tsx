@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router-dom"
-import { useState } from "react";
-
 interface Producto {
   nombre: string;
   precios: number[];

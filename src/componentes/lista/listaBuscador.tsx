@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 interface Producto {
   nombre: string;
   precios: number[];
