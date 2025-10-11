@@ -7,6 +7,7 @@
 }
 #listaFiltroCelular{
   background-color: #ed8330;
+  font-size: 15px;
 }
 #listaFiltroComputadora{
   
@@ -58,7 +59,49 @@
 .listaProducto:nth-child(even) { 
   background-color: #d6670c; 
 }
+__________________________________
+#listaMovil{
+  width: 95%;
+  min-width: 344px;
+  min-height: 100vh;
+}
+#listaProductosMovil{
+  flex-wrap: wrap;
+}
+.listaProductoMovil{
+  display: flex;
+  flex-wrap: wrap;
+  width: 47%;
+}
+.listaImagenMovil{
+  width: 100%;
+  background-color: white;
+}
+.listaInfoMovil{
+  text-align: center;
+  width: 100%;
+  font-size: 10px;
+}
+.listaNombreMovil{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px;
+  font-size: 15px;
+}
+.listaDescripcionMovil{
+  display: none;
+}
+.listaLeerMovil{
+  display: none;
+}
+.listaPreciosMovil{
+  width: 100%;
+  padding-bottom: 5px;
+  font-size: 10px;
+}
 
+/*
 @media (max-width: 992px) {
   #lista{
     width: 95%;

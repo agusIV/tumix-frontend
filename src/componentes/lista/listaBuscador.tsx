@@ -11,14 +11,14 @@ interface Producto {
 
 // ListaBuscador.tsx - Versión más simple
 interface ListaBuscadorProps {
-    lista: Producto[];
-    categoriasSeleccionadas: string[];
-    onCategoriaChange: (categoria: string) => void; // Tipo más simple
+  lista: Producto[];
+  categoriasSeleccionadas: string[];
+  onCategoriaChange: (categoria: string) => void; // Tipo más simple
+  dispositivo: boolean
 }
 
-export default function ListaBuscador({ lista, categoriasSeleccionadas, onCategoriaChange }: ListaBuscadorProps) {
+export default function ListaBuscador({ lista, categoriasSeleccionadas, onCategoriaChange, dispositivo }: ListaBuscadorProps) {
   const categorias = [...new Set(lista.flatMap(p => p.categorias))]
-  const [dispositivo] = useState(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
   
   return (
     <div id="listaBuscador" className="d-flex gap-2">
